@@ -117,6 +117,15 @@ sass --watch assets/scss:assets/css
 ```
 To stop watching your changes, press `Ctrl + C` in the terminal. Make sure to always stop watching before closing the project. 
 
+## CSS color scheme utility classes
+### Background color classes
+`bg-light` `bg-sage` `bg-peach` `bg-coral` `bg-plum` `bg-mocha` `bg-dark`
+### Text color classes
+`text-light` `text-sage` `text-peach` `text-coral` `text-plum` `text-mocha` `text-dark`
+
+<img width="700" height="300" alt="colors" src="https://github.com/user-attachments/assets/d16c20ac-7e9c-4e76-abb4-fe3e9c370d6f" />
+
+
 
 
 
