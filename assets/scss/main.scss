@@ -25,11 +25,13 @@ $xxl: 1400px;
 
 }
 **/
-
-$background: #f6f6f6;
-$light: #d4d3cf;
-$dark: #121212;
-$highlight: #1591ef;
+$light: #f3f5e7;
+$sage: #C9CBA3;
+$peach: #FFE1A8;
+$coral: #E26D5C;
+$plum: #723D46;
+$mocha: #472D30;
+$dark: #26181A;
 
 
 /* Mixins */
@@ -48,3 +50,47 @@ $highlight: #1591ef;
 * {
     box-sizing: border-box;
 }
+
+// utillity classees 
+.text-light {
+    color: $light !important;
+}
+.text-dark {
+    color: $dark !important;
+}
+.text-sage {
+    color: $sage !important;
+}
+.text-peach {
+    color: $peach !important;
+}
+.text-coral {
+    color: $coral !important;
+}
+.text-plum {
+    color: $plum !important;
+}
+.text-mocha {
+    color: $mocha !important;
+}
+.bg-light {
+    background-color: $light !important;
+}
+.bg-dark {
+    background-color: $dark !important;
+}
+.bg-sage {
+    background-color: $sage !important;
+}
+.bg-peach {
+    background-color: $peach !important;
+}
+.bg-coral {
+    background-color: $coral !important;
+}
+.bg-plum {
+    background-color: $plum !important;
+}
+.bg-mocha {
+    background-color: $mocha !important;
+}   

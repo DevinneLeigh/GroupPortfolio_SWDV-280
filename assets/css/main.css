@@ -23,4 +23,60 @@
   box-sizing: border-box;
 }
 
+.text-light {
+  color: #f3f5e7 !important;
+}
+
+.text-dark {
+  color: #26181A !important;
+}
+
+.text-sage {
+  color: #C9CBA3 !important;
+}
+
+.text-peach {
+  color: #FFE1A8 !important;
+}
+
+.text-coral {
+  color: #E26D5C !important;
+}
+
+.text-plum {
+  color: #723D46 !important;
+}
+
+.text-mocha {
+  color: #472D30 !important;
+}
+
+.bg-light {
+  background-color: #f3f5e7 !important;
+}
+
+.bg-dark {
+  background-color: #26181A !important;
+}
+
+.bg-sage {
+  background-color: #C9CBA3 !important;
+}
+
+.bg-peach {
+  background-color: #FFE1A8 !important;
+}
+
+.bg-coral {
+  background-color: #E26D5C !important;
+}
+
+.bg-plum {
+  background-color: #723D46 !important;
+}
+
+.bg-mocha {
+  background-color: #472D30 !important;
+}
+
 /*# sourceMappingURL=main.css.map */
