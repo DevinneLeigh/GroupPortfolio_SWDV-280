@@ -1,0 +1,44 @@
+@use "../abstracts/variables" as v;
+
+.text-light {
+    color: v.$light !important;
+}
+.text-dark {
+    color: v.$dark !important;
+}
+.text-sage {
+    color: v.$sage !important;
+}
+.text-peach {
+    color: v.$peach !important;
+}
+.text-coral {
+    color: v.$coral !important;
+}
+.text-plum {
+    color: v.$plum !important;
+}
+.text-mocha {
+    color: v.$mocha !important;
+}
+.bg-light {
+    background-color: v.$light !important;
+}
+.bg-dark {
+    background-color: v.$dark !important;
+}
+.bg-sage {
+    background-color: v.$sage !important;
+}
+.bg-peach {
+    background-color: v.$peach !important;
+}
+.bg-coral {
+    background-color: v.$coral !important;
+}
+.bg-plum {
+    background-color: v.$plum !important;
+}
+.bg-mocha {
+    background-color: v.$mocha !important;
+}   

@@ -1,96 +1,11 @@
-$xs:  400px;
-$sm:  576px;
-$md:  768px;
-$lg:  960px;
-$xl:  1200px;
-$xxl: 1400px;
-
-/**
-@include xs { // 400px
-
-}
-@include sm { // 576px
-
-}
-@include md { // 768px
-
-}
-@include lg { // 960px
-
-}
-@include xl { // 1200px
-
-}
-@include xxl { // 1400px
-
-}
-**/
-$light: #f3f5e7;
-$sage: #C9CBA3;
-$peach: #FFE1A8;
-$coral: #E26D5C;
-$plum: #723D46;
-$mocha: #472D30;
-$dark: #26181A;
-
-
-/* Mixins */
-@mixin xs { @media (min-width: $xs) { @content; }}
-@mixin sm { @media (min-width: $sm) { @content; } }
-@mixin sm-landscape { @media (min-width: $sm) and (max-width: $md) and (orientation: landscape) { @content; } }
-@mixin md { @media (min-width: $md) { @content; } }
-@mixin lg { @media (min-width: $lg) { @content; } }
-@mixin xl { @media (min-width: $xl) { @content; } }
-@mixin xxl { @media (min-width: $xxl) { @content; } }
-@mixin lt($width) { @media (max-width: $width) { @content; } }
-@mixin gt($width) { @media (min-width: $width) { @content; } }
-@mixin between($width1, $width2) { @media (min-width: $width1) and (max-width: $width2) { @content; } }
+@use "abstracts/variables" as v;
+@use "abstracts/mixins" as m;
+@use "utilities/utilities";
+@use "components/card";
 
 
 * {
     box-sizing: border-box;
 }
 
-// utillity classees 
-.text-light {
-    color: $light !important;
-}
-.text-dark {
-    color: $dark !important;
-}
-.text-sage {
-    color: $sage !important;
-}
-.text-peach {
-    color: $peach !important;
-}
-.text-coral {
-    color: $coral !important;
-}
-.text-plum {
-    color: $plum !important;
-}
-.text-mocha {
-    color: $mocha !important;
-}
-.bg-light {
-    background-color: $light !important;
-}
-.bg-dark {
-    background-color: $dark !important;
-}
-.bg-sage {
-    background-color: $sage !important;
-}
-.bg-peach {
-    background-color: $peach !important;
-}
-.bg-coral {
-    background-color: $coral !important;
-}
-.bg-plum {
-    background-color: $plum !important;
-}
-.bg-mocha {
-    background-color: $mocha !important;
-}   
+
