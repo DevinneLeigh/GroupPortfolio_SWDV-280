@@ -83,7 +83,11 @@
 
 .cards {
   margin-top: 50px;
-  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  width: 100%;
 }
 
 .blob-card {
@@ -92,7 +96,6 @@
   overflow: hidden;
   margin-bottom: 30px;
   text-align: center;
-  text-transform: uppercase;
   color: #26181A;
   font-size: 16px;
   font-weight: bold;
@@ -119,24 +122,35 @@
   padding: 10px;
 }
 .blob-card__hover-btn {
+  text-transform: uppercase;
+  pointer-events: auto;
   position: absolute;
   z-index: 3;
   left: 50%;
   bottom: 100px;
   transform: translate(-50%, 200px);
-  padding: 5px;
+  transition: transform 0.8s ease;
+  pointer-events: none;
+  width: 85%;
+}
+.blob-card__hover-btn a {
+  text-decoration: none;
+  padding: 5px 10px;
   color: #f3f5e7;
   border-radius: 25px;
   border: solid 2px #f3f5e7;
   font-size: 12px;
-  transition: transform 0.8s ease;
-  pointer-events: none;
-  width: 85%;
+}
+.blob-card__hover-btn a:hover {
+  background: #f3f5e7;
+  color: #E26D5C;
+  border: none;
 }
 .blob-card:hover .blob-card__hover-btn {
   transform: translate(-50%, 0);
 }
 .blob-card .card-heading {
+  text-transform: uppercase;
   font-size: 16px;
   font-weight: bold;
   color: #26181A;
@@ -233,6 +247,10 @@
   border-radius: 50%;
   object-fit: cover;
   border: solid 6px #C9CBA3;
+}
+
+.blob-card__hover-btn {
+  pointer-events: auto;
 }
 
 * {

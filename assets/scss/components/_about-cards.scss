@@ -12,7 +12,12 @@
 
 .cards {
   margin-top: 50px;
-  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  width: 100%
+
 }
 
 .blob-card {
@@ -22,7 +27,6 @@
   overflow: hidden;
   margin-bottom: 30px;
   text-align: center;
-  text-transform: uppercase;
   color: v.$dark;
   font-size: 16px;
   font-weight: bold;
@@ -49,20 +53,31 @@
     padding: 10px;
   }
   &__hover-btn {
+    text-transform: uppercase;
+    pointer-events: auto;
     position: absolute;
     z-index: 3; // above blobs
     left: 50%;
     bottom: 100px; // where it should end up
     transform: translate(-50%, 200px); // start lower
-    padding: 5px;
-    color: v.$light;
-    border-radius: 25px;
-    border: solid 2px v.$light;
-    font-size: 12px;
     transition: transform 0.8s ease;
     pointer-events: none;
     width: 85%;
+    a {
+      text-decoration: none;
+      padding: 5px 10px;
+      color: v.$light;
+      border-radius: 25px;
+      border: solid 2px v.$light;
+      font-size: 12px;
     }
+    a:hover {
+      background: v.$light;
+      color: v.$coral;
+      border: none;
+    }
+
+  }
   &:hover {
     .blob-card__hover-btn {
       transform: translate(-50%, 0);
@@ -71,6 +86,7 @@
 
 
   .card-heading {
+    text-transform: uppercase;
     font-size: 16px;
     font-weight: bold;
     color: v.$dark;
@@ -174,4 +190,8 @@
   border-radius: 50%;
   object-fit: cover;
   border: solid 6px v.$sage;
+}
+
+.blob-card__hover-btn {
+  pointer-events: auto; 
 }
