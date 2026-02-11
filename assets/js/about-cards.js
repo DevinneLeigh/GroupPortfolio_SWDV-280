@@ -64,10 +64,10 @@ document.addEventListener('DOMContentLoaded', () => {
       link: ""
     },
     {
-      imageSrc: "../assets/images/profile.webp",
+      imageSrc: "assets/images/RRS-profile-img.JPG",
       heading: "Riley",
-      text: "Lorem ipsum dolor sit amet consectetur adipiscing elit. Dolor sit amet consectetur adipiscing elit quisque faucibus.",
-      link: ""
+      text: "Software developer with four years of coding experience and a strong focus on problem-solving. CWI graduate currently continuing toward a B.S. in Computer Science at Boise State University.",
+      link: "https://stackblitz.com/edit/stackblitz-starters-jpn5yqs7?embed=1&file=src%2Findex.js&view=preview"
     },
     {
       imageSrc: "../assets/images/profile.webp",

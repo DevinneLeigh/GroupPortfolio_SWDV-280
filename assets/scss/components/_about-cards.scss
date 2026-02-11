@@ -1,9 +1,33 @@
 @use "../abstracts/variables" as v;
 @use "../abstracts/mixins" as m;
 
+/*ABOUT HERO*/
+.about-hero {
+  background: v.$plum;
+  color: v.$light;
+  padding: 60px 20px;
+  border-radius: 30px;
+  margin-bottom: 40px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+  text-align: center;
+
+  &__title {
+    font-size: 42px;
+    font-weight: 700;
+    margin-bottom: 12px;
+  }
+
+  &__subtitle {
+    max-width: 700px;
+    margin: 0 auto;
+    font-size: 18px;
+    line-height: 1.6;
+    opacity: 0.95;
+  }
+}
 
 
-
+/*ABOUT CARDS*/
 *, *:before, *:after {
   box-sizing: border-box;
   margin: 0;
