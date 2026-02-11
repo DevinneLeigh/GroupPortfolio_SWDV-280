@@ -3,7 +3,7 @@ class CustomNavbar extends HTMLElement {
         super();
 
         this.innerHTML = `
-        <nav class="navbar navbar-expand-sm bg-mocha text-white">
+        <nav class="navbar navbar-expand-sm navbar-dark bg-mocha">
             <div class="container-fluid">
                 <a class="navbar-brand" href="index.html">Home</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
