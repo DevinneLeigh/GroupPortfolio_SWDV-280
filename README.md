@@ -1,3 +1,6 @@
+## Link to live site
+`https://devinneleigh.github.io/GroupPortfolio_SWDV-280/`
+
 ## Access
 
 You'll first need access to the repo. Send me your GitHub username and I'll add you as a collaborator. 

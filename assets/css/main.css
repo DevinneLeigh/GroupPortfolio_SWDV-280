@@ -1,3 +1,4 @@
+/* Mixins */
 /**
 @include xs { // 400px
 
@@ -18,11 +19,6 @@
 
 }
 **/
-/* Mixins */
-* {
-  box-sizing: border-box;
-}
-
 .text-light {
   color: #f3f5e7 !important;
 }
@@ -77,6 +73,212 @@
 
 .bg-mocha {
   background-color: #472D30 !important;
+}
+
+/*ABOUT HERO*/
+.about-hero {
+  background: #723D46;
+  color: #f3f5e7;
+  padding: 60px 20px;
+  border-radius: 30px;
+  margin-bottom: 40px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  text-align: center;
+}
+.about-hero__title {
+  font-size: 42px;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+.about-hero__subtitle {
+  max-width: 700px;
+  margin: 0 auto;
+  font-size: 18px;
+  line-height: 1.6;
+  opacity: 0.95;
+}
+
+/*ABOUT CARDS*/
+*, *:before, *:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.cards {
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  width: 100%;
+}
+
+.blob-card {
+  z-index: 1;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 30px;
+  text-align: center;
+  color: #26181A;
+  font-size: 16px;
+  font-weight: bold;
+  background: #f3f5e7;
+  outline: none;
+  border: none;
+  transition: color 0.5s;
+  cursor: pointer;
+  border-radius: 30px;
+  width: 250px;
+  height: 300px;
+  box-shadow: 4px 4px 8px 1px rgba(0, 0, 0, 0.1176470588);
+}
+.blob-card__content {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  gap: 5px;
+  padding: 10px;
+}
+.blob-card__hover-btn {
+  text-transform: uppercase;
+  pointer-events: auto;
+  position: absolute;
+  z-index: 3;
+  left: 50%;
+  bottom: 100px;
+  transform: translate(-50%, 200px);
+  transition: transform 0.8s ease;
+  pointer-events: none;
+  width: 85%;
+}
+.blob-card__hover-btn a {
+  text-decoration: none;
+  padding: 5px 10px;
+  color: #f3f5e7;
+  border-radius: 25px;
+  border: solid 2px #f3f5e7;
+  font-size: 12px;
+}
+.blob-card__hover-btn a:hover {
+  background: #f3f5e7;
+  color: #E26D5C;
+  border: none;
+}
+.blob-card:hover .blob-card__hover-btn {
+  transform: translate(-50%, 0);
+}
+.blob-card .card-heading {
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: bold;
+  color: #26181A;
+}
+.blob-card .card-text {
+  font-size: 10px;
+  color: #26181A;
+  text-align: left;
+  padding: 0 10px;
+}
+.blob-card:before {
+  content: "";
+  z-index: 1;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
+}
+.blob-card:after {
+  content: "";
+  z-index: -2;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transition: all 0.3s 0.2s;
+  border-radius: 30px;
+}
+.blob-card:hover {
+  color: #f3f5e7;
+  border-radius: 30px;
+}
+.blob-card:hover:after {
+  transition: all 0.3s;
+  left: 0;
+  top: 0;
+  border-radius: 30px;
+}
+.blob-card__inner {
+  z-index: 2;
+  overflow: hidden;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
+}
+.blob-card__blobs {
+  position: relative;
+  display: block;
+  height: 100%;
+  filter: url("#goo");
+}
+.blob-card__blob {
+  position: absolute;
+  width: 33.3333333333%;
+  height: 100%;
+  background: #E26D5C;
+  border-radius: 100%;
+  transform: translate3d(0, 150%, 0) scale(1.7);
+  transition: transform 0.45s;
+}
+@supports (filter: url("#goo")) {
+  .blob-card__blob {
+    transform: translate3d(0, 150%, 0) scale(1.4);
+  }
+}
+.blob-card__blob:nth-child(1) {
+  left: 0%;
+  transition-delay: 0s;
+}
+.blob-card__blob:nth-child(2) {
+  left: 40%;
+  transition-delay: 0.08s;
+}
+.blob-card__blob:nth-child(3) {
+  left: 80%;
+  transition-delay: 0.16s;
+}
+.blob-card:hover .blob-card__blob {
+  transform: translateZ(0) scale(1.7);
+}
+@supports (filter: url("#goo")) {
+  .blob-card:hover .blob-card__blob {
+    transform: translateZ(0) scale(1.4);
+  }
+}
+
+.profile-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: solid 6px #C9CBA3;
+}
+
+.blob-card__hover-btn {
+  pointer-events: auto;
+}
+
+* {
+  box-sizing: border-box;
 }
 
 /*# sourceMappingURL=main.css.map */
