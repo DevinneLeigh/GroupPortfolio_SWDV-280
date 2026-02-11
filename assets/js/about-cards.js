@@ -22,43 +22,43 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const cardsData = [
     {
-      imageSrc: "../assets/images/profile.webp",
+      imageSrc: "assets/images/profile.webp",
       heading: "Ethan",
       text: "Lorem ipsum dolor sit amet consectetur adipiscing elit. Dolor sit amet consectetur adipiscing elit quisque faucibus.",
       link: ""
     },
     {
-      imageSrc: "../assets/images/profile.webp",
+      imageSrc: "assets/images/profile.webp",
       heading: "Jonathan",
       text: "Lorem ipsum dolor sit amet consectetur adipiscing elit. Dolor sit amet consectetur adipiscing elit quisque faucibus.",
       link: ""
     },
     {
-      imageSrc: "../assets/images/profile.webp",
+      imageSrc: "assets/images/profile.webp",
       heading: "Jonny",
       text: "Lorem ipsum dolor sit amet consectetur adipiscing elit. Dolor sit amet consectetur adipiscing elit quisque faucibus.",
       link: ""
     },
     {
-      imageSrc: "../assets/images/profile.webp",
+      imageSrc: "assets/images/profile.webp",
       heading: "Lea",
       text: "Lorem ipsum dolor sit amet consectetur adipiscing elit. Dolor sit amet consectetur adipiscing elit quisque faucibus.",
       link: ""
     },
     {
-      imageSrc: "../assets/images/profile.webp",
+      imageSrc: "assets/images/profile.webp",
       heading: "Luke",
       text: "Lorem ipsum dolor sit amet consectetur adipiscing elit. Dolor sit amet consectetur adipiscing elit quisque faucibus.",
       link: ""
     },
     {
-      imageSrc: "../assets/images/profile.webp",
+      imageSrc: "assets/images/profile.webp",
       heading: "Matthias",
       text: "Lorem ipsum dolor sit amet consectetur adipiscing elit. Dolor sit amet consectetur adipiscing elit quisque faucibus.",
       link: ""
     },
     {
-      imageSrc: "../assets/images/profile.webp",
+      imageSrc: "assets/images/profile.webp",
       heading: "Nicole",
       text: "Lorem ipsum dolor sit amet consectetur adipiscing elit. Dolor sit amet consectetur adipiscing elit quisque faucibus.",
       link: ""
@@ -70,19 +70,19 @@ document.addEventListener('DOMContentLoaded', () => {
       link: "https://stackblitz.com/edit/stackblitz-starters-jpn5yqs7?embed=1&file=src%2Findex.js&view=preview"
     },
     {
-      imageSrc: "../assets/images/profile.webp",
+      imageSrc: "assets/images/profile.webp",
       heading: "Sarah",
       text: "Lorem ipsum dolor sit amet consectetur adipiscing elit. Dolor sit amet consectetur adipiscing elit quisque faucibus.",
       link: ""
     },
     {
-      imageSrc: "../assets/images/profile.webp",
+      imageSrc: "assets/images/profile.webp",
       heading: "Sham",
       text: "Lorem ipsum dolor sit amet consectetur adipiscing elit. Dolor sit amet consectetur adipiscing elit quisque faucibus.",
       link: ""
     },
     {
-      imageSrc: "../assets/images/profile.webp",
+      imageSrc: "assets/images/profile.webp",
       heading: "Devinne",
       text: "Lorem ipsum dolor sit amet consectetur adipiscing elit. Dolor sit amet consectetur adipiscing elit quisque faucibus.",
       link: "https://devinneleigh.github.io/portfolio3/index.html"
