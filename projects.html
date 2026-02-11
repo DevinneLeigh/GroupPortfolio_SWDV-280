@@ -6,13 +6,66 @@
     <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+    <style>
+      :root{
+        --light:#F3F5E7;
+        --sage:#C9CBA3;
+        --peach:#FFE1A8;
+        --coral:#E26D5C;
+        --plum:#723D46;
+        --mocha:#472D30;
+        --dark:#26181A;
+      }
+
+      .text-peach{ color:var(--peach); }
+
+      .portfolio-item{
+        position:relative;
+        overflow:hidden;
+        border-radius:12px;
+      }
+
+      .portfolio-overlay{
+        position:absolute;
+        inset:0;
+        display:flex;
+        flex-direction:column;
+        justify-content:flex-end;
+        padding:1rem;
+        background:rgba(38,24,26,0.85);
+        color:var(--light);
+        opacity:0;
+        transition:opacity .25s ease;
+      }
+
+      .portfolio-item:hover .portfolio-overlay{
+        opacity:1;
+      }
+
+      .portfolio-item img{
+        display:block;
+        transition:transform .25s ease;
+      }
+      .portfolio-item:hover img{
+        transform:scale(1.03);
+      }
+
+      .icon-link{
+        color:var(--peach);
+        text-decoration:none;
+        font-weight:600;
+      }
+      .icon-link:hover{
+        color:var(--coral);
+        text-decoration:underline;
+      }
+    </style>
 </head>
 <body>
     <custom-navbar></custom-navbar>
     <header>
       <h1>&#8202</h1><br>
     </header>
-    <!--start of edit-->
     <main class="main">
     <!-- Page Title -->
     <div class="row d-flex justify-content-center text-center">
@@ -25,10 +78,8 @@
            adipisicing elit. Eaque, ab.</p>
       </div>
     </div><!-- End Page Title -->
-
     <!-- Portfolio Section -->
     <section id="Portfolio" class="Portfolio section py-5">
-
       <div class="container"> 
           <ul class="nav justify-content-center gap-3 mb-4">
             <li class="nav-item"><a class="nav-link active" href="#">All</a></li>
@@ -38,86 +89,100 @@
             <li class="nav-item"><a class="nav-link" href="#">Python</a></li>
             <li class="nav-item"><a class="nav-link" href="#">C#</a></li>
           </ul>
-
-
-          <div class="row gy-4">
-
+          <div class="row g-4">
             <div class="col-lg-4 col-md-6">
-              <div class="">
-                <img src="" class="" alt="">
-                <div class="">
-                  <h4>Project 1</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur Lorem ipsum dolor sit 
+              <div class="portfolio-item shadow-sm">
+                <img src="assets/images/exampleproject.png" class="img-fluid w-100" alt="Project 1">
+                <div class="portfolio-overlay">
+                  <h4 class="m-0 text-peach fw-semibold">Project 1</h4>
+                  <p class="mb-2 small">Lorem ipsum, dolor sit amet consectetur Lorem ipsum dolor sit 
                     amet consectetur, adipisicing elit. Saepe consequuntur quo 
                     reiciendis dolores, expedita consequatur.</p>
+                    <div class="d-flex gap-3">
+                      <a href="#" class="icon-link">View</a>
+                      <a href="#" class="icon-link">Code</a>
+                    </div>
                 </div>
               </div>
             </div><!-- End Portfolio Item -->
-
             <div class="col-lg-4 col-md-6">
-              <div class="">
-                <img src="" class="" alt="">
-                <div class="">
-                  <h4>Project 2</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur Lorem ipsum dolor sit 
+              <div class="portfolio-item shadow-sm">
+                <img src="assets/images/exampleproject.png" class="img-fluid w-100" alt="Project 2">
+                <div class="portfolio-overlay">
+                  <h4 class="m-0 text-peach fw-semibold">Project 2</h4>
+                  <p class="mb-2 small">Lorem ipsum, dolor sit amet consectetur Lorem ipsum dolor sit 
                     amet consectetur, adipisicing elit. Saepe consequuntur quo 
                     reiciendis dolores, expedita consequatur.</p>
+                    <div class="d-flex gap-3">
+                      <a href="#" class="icon-link">View</a>
+                      <a href="#" class="icon-link">Code</a>
+                    </div>
                 </div>
               </div>
             </div><!-- End Portfolio Item -->
-
             <div class="col-lg-4 col-md-6">
-              <div class="">
-                <img src="" class="" alt="">
-                <div class="">
-                  <h4>Project 3</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur Lorem ipsum dolor sit 
+              <div class="portfolio-item shadow-sm">
+                <img src="assets/images/exampleproject.png" class="img-fluid w-100" alt="Project 3">
+                <div class="portfolio-overlay">
+                  <h4 class="m-0 text-peach fw-semibold">Project 3</h4>
+                  <p class="mb-2 small">Lorem ipsum, dolor sit amet consectetur Lorem ipsum dolor sit 
                     amet consectetur, adipisicing elit. Saepe consequuntur quo 
                     reiciendis dolores, expedita consequatur.</p>
+                    <div class="d-flex gap-3">
+                      <a href="#" class="icon-link">View</a>
+                      <a href="#" class="icon-link">Code</a>
+                    </div>
                 </div>
               </div>
             </div><!-- End Portfolio Item -->
-
             <div class="col-lg-4 col-md-6">
-              <div class="">
-                <img src="" class="" alt="">
-                <div class="">
-                  <h4>Project 4</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur Lorem ipsum dolor sit 
+              <div class="portfolio-item shadow-sm">
+                <img src="assets/images/exampleproject.png" class="img-fluid w-100" alt="Project 4">
+                <div class="portfolio-overlay">
+                  <h4 class="m-0 text-peach fw-semibold">Project 4</h4>
+                  <p class="mb-2 small">Lorem ipsum, dolor sit amet consectetur Lorem ipsum dolor sit 
                     amet consectetur, adipisicing elit. Saepe consequuntur quo 
                     reiciendis dolores, expedita consequatur.</p>
+                    <div class="d-flex gap-3">
+                      <a href="#" class="icon-link">View</a>
+                      <a href="#" class="icon-link">Code</a>
+                    </div>
                 </div>
               </div>
             </div><!-- End Portfolio Item -->
-
             <div class="col-lg-4 col-md-6">
-              <div class="">
-                <img src="" class="" alt="">
-                <div class="">
-                  <h4>Project 4</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur Lorem ipsum dolor sit 
+              <div class="portfolio-item shadow-sm">
+                <img src="assets/images/exampleproject.png" class="img-fluid w-100" alt="Project 5">
+                <div class="portfolio-overlay">
+                  <h4 class="m-0 text-peach fw-semibold">Project 5</h4>
+                  <p class="mb-2 small">Lorem ipsum, dolor sit amet consectetur Lorem ipsum dolor sit 
                     amet consectetur, adipisicing elit. Saepe consequuntur quo 
                     reiciendis dolores, expedita consequatur.</p>
+                    <div class="d-flex gap-3">
+                      <a href="#" class="icon-link">View</a>
+                      <a href="#" class="icon-link">Code</a>
+                    </div>
                 </div>
               </div>
             </div><!-- End Portfolio Item -->
-
             <div class="col-lg-4 col-md-6">
-              <div class="">
-                <img src="" class="" alt="">
-                <div class="">
-                  <h4>Project 4</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur Lorem ipsum dolor sit 
+              <div class="portfolio-item shadow-sm">
+                <img src="assets/images/exampleproject.png" class="img-fluid w-100" alt="Project 6">
+                <div class="portfolio-overlay">
+                  <h4 class="m-0 text-peach fw-semibold">Project 6</h4>
+                  <p class="mb-2 small">Lorem ipsum, dolor sit amet consectetur Lorem ipsum dolor sit 
                     amet consectetur, adipisicing elit. Saepe consequuntur quo 
                     reiciendis dolores, expedita consequatur.</p>
+                    <div class="d-flex gap-3">
+                      <a href="#" class="icon-link">View</a>
+                      <a href="#" class="icon-link">Code</a>
+                    </div>
                 </div>
               </div>
             </div><!-- End Portfolio Item -->
           </div><!-- End Portfolio Container -->
       </div>
-
     </section><!-- /Portfolio Section -->
-    <!--End of edit-->
     </main>
     <footer class="bg-dark text-white mt-5 p-4">
       <div class="container text-center">
