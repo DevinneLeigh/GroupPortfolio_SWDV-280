@@ -73,7 +73,7 @@ document.addEventListener('DOMContentLoaded', () => {
       imageSrc: "assets/images/sarah-profile-img.png",
       heading: "Sarah",
       text: "I'm a second year Software Development student at CWI. I have a passion for animation and illustration which I hope to apply to creating engaging websites.",
-      link: "swwebdev.github.io/Personal_Portfolio_Winter_2025/index.html"
+      link: "https://swwebdev.github.io/Personal_Portfolio_Winter_2025/index.html"
     },
     {
       imageSrc: "assets/images/profile.webp",
