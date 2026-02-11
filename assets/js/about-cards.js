@@ -70,10 +70,10 @@ document.addEventListener('DOMContentLoaded', () => {
       link: "https://stackblitz.com/edit/stackblitz-starters-jpn5yqs7?embed=1&file=src%2Findex.js&view=preview"
     },
     {
-      imageSrc: "assets/images/profile.webp",
+      imageSrc: "assets/images/sarah-profile-image.png",
       heading: "Sarah",
-      text: "Lorem ipsum dolor sit amet consectetur adipiscing elit. Dolor sit amet consectetur adipiscing elit quisque faucibus.",
-      link: ""
+      text: "I'm a second year Software Development student at CWI. I have a passion for animation and illustration which I hope to apply to creating engaging websites.",
+      link: "swwebdev.github.io/Personal_Portfolio_Winter_2025/index.html"
     },
     {
       imageSrc: "assets/images/profile.webp",
