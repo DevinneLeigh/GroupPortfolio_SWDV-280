@@ -82,7 +82,7 @@ document.addEventListener('DOMContentLoaded', () => {
       link: ""
     },
     {
-      imageSrc: "assets/images/profile.webp",
+      imageSrc: "assets/images/devinne-profile.jpg",
       heading: "Devinne",
       text: "Lorem ipsum dolor sit amet consectetur adipiscing elit. Dolor sit amet consectetur adipiscing elit quisque faucibus.",
       link: "https://devinneleigh.github.io/portfolio3/index.html"
