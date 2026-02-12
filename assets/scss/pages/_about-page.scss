@@ -77,7 +77,6 @@
     padding: 10px;
   }
   &__hover-btn {
-    text-transform: uppercase;
     pointer-events: auto;
     position: absolute;
     z-index: 3; // above blobs
@@ -87,20 +86,6 @@
     transition: transform 0.8s ease;
     pointer-events: none;
     width: 85%;
-    a {
-      text-decoration: none;
-      padding: 5px 10px;
-      color: v.$light;
-      border-radius: 25px;
-      border: solid 2px v.$light;
-      font-size: 12px;
-    }
-    a:hover {
-      background: v.$light;
-      color: v.$coral;
-      border: none;
-    }
-
   }
   &:hover {
     .blob-card__hover-btn {

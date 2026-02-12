@@ -22,6 +22,37 @@ main {
   flex: 1;
 }
 
+.submit-btn {
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 25px;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.inverted-accent-btn {
+    background: none;
+    color: v.$light;
+    border: solid 2px v.$light;
+}
+.inverted-accent-btn:hover {
+    background: v.$light;
+    color: v.$coral;
+    border: solid 3px v.$light;
+}
+
+.accent-btn {
+    color: v.$light;
+    border: solid 2px v.$coral;
+    background: v.$coral;
+}
+.accent-btn:hover {
+    background: none;
+    color: v.$coral;
+    border: solid 2px v.$coral;
+}
+
 
 
 
