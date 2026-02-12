@@ -1,7 +1,10 @@
 @use "abstracts/variables" as v;
 @use "abstracts/mixins" as m;
 @use "utilities/utilities";
-@use "components/about-cards";
+@use "pages/about-page";
+@use "pages/contact-page";
+@use "pages/index-page";
+@use "pages/projects-page";
 
 
 html, body {
