@@ -86,12 +86,29 @@
         padding: .35rem .9rem;
       }
 
+      .finisher-header {
+  height: 400px !important;   /* or 60vh */
+  width: 100%;
+  position: relative;
+}
+
+.finisher-header canvas {
+  width: 100% !important;
+  height: 100% !important;
+  display: block;
+}
+
+.container {
+  padding-top: 30px;
+}
+
+
     </style>
 </head>
 <body>
     <custom-navbar></custom-navbar>
     <header class="finisher-header d-flex align-items-center justify-content-center"
-        style="width:100%; height:350px;">
+        style="width:100%; height:400px;">
   <div class="row d-flex justify-content-center text-center">
       <div class="col-lg-8">
         <h1>Projects</h1>
