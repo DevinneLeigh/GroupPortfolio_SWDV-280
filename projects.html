@@ -46,6 +46,7 @@
         display:block;
         transition:transform .25s ease;
       }
+
       .portfolio-item:hover img{
         transform:scale(1.03);
       }
@@ -55,10 +56,23 @@
         text-decoration:none;
         font-weight:600;
       }
+
       .icon-link:hover{
         color:var(--coral);
         text-decoration:underline;
       }
+
+      #projectFilters .nav-link{
+        color: var(--plum) !important;
+      }
+
+      #projectFilters .nav-link.active{
+        background: var(--coral);
+        color: var(--light) !important;
+        border-radius: 999px;
+        padding: .35rem .9rem;
+      }
+
     </style>
 </head>
 <body>
@@ -81,101 +95,91 @@
     <!-- Portfolio Section -->
     <section id="Portfolio" class="Portfolio section py-5">
       <div class="container"> 
-          <ul class="nav justify-content-center gap-3 mb-4">
-            <li class="nav-item"><a class="nav-link active" href="#">All</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Css</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Javascrpit</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Html</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Python</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">C#</a></li>
+          <ul class="nav justify-content-center gap-3 mb-4" id="projectFilters">
+            <li class="nav-item"><a class="nav-link active" href="#" data-filter="all">All</a></li>
+            <li class="nav-item"><a class="nav-link" href="#" data-filter="css">CSS</a></li>
+            <li class="nav-item"><a class="nav-link" href="#" data-filter="javascript">JavaScript</a></li>
+            <li class="nav-item"><a class="nav-link" href="#" data-filter="html">HTML</a></li>
+            <li class="nav-item"><a class="nav-link" href="#" data-filter="python">Python</a></li>
+            <li class="nav-item"><a class="nav-link" href="#" data-filter="csharp">C#</a></li>
           </ul>
           <div class="row g-4">
-            <div class="col-lg-4 col-md-6">
+            <div class="col-lg-4 col-md-6 project-card" data-tags="html css">
+
               <div class="portfolio-item shadow-sm">
                 <img src="assets/images/exampleproject.png" class="img-fluid w-100" alt="Project 1">
                 <div class="portfolio-overlay">
                   <h4 class="m-0 text-peach fw-semibold">Project 1</h4>
                   <p class="mb-2 small">Lorem ipsum, dolor sit amet consectetur Lorem ipsum dolor sit 
-                    amet consectetur, adipisicing elit. Saepe consequuntur quo 
-                    reiciendis dolores, expedita consequatur.</p>
+                    amet consectetur, adipisicing elit. </p>
                     <div class="d-flex gap-3">
-                      <a href="#" class="icon-link">View</a>
-                      <a href="#" class="icon-link">Code</a>
+                      <a href="#" class="icon-link">View Project</a>
                     </div>
                 </div>
               </div>
             </div><!-- End Portfolio Item -->
-            <div class="col-lg-4 col-md-6">
+            <div class="col-lg-4 col-md-6 project-card" data-tags="html css javascript">
               <div class="portfolio-item shadow-sm">
                 <img src="assets/images/exampleproject.png" class="img-fluid w-100" alt="Project 2">
                 <div class="portfolio-overlay">
                   <h4 class="m-0 text-peach fw-semibold">Project 2</h4>
                   <p class="mb-2 small">Lorem ipsum, dolor sit amet consectetur Lorem ipsum dolor sit 
-                    amet consectetur, adipisicing elit. Saepe consequuntur quo 
-                    reiciendis dolores, expedita consequatur.</p>
+                    amet consectetur, adipisicing elit. </p>
                     <div class="d-flex gap-3">
-                      <a href="#" class="icon-link">View</a>
-                      <a href="#" class="icon-link">Code</a>
+                      <a href="#" class="icon-link">View Project</a>
                     </div>
                 </div>
               </div>
             </div><!-- End Portfolio Item -->
-            <div class="col-lg-4 col-md-6">
+            <div class="col-lg-4 col-md-6 project-card" data-tags="Python">
+
               <div class="portfolio-item shadow-sm">
                 <img src="assets/images/exampleproject.png" class="img-fluid w-100" alt="Project 3">
                 <div class="portfolio-overlay">
                   <h4 class="m-0 text-peach fw-semibold">Project 3</h4>
                   <p class="mb-2 small">Lorem ipsum, dolor sit amet consectetur Lorem ipsum dolor sit 
-                    amet consectetur, adipisicing elit. Saepe consequuntur quo 
-                    reiciendis dolores, expedita consequatur.</p>
+                    amet consectetur, adipisicing elit.</p>
                     <div class="d-flex gap-3">
-                      <a href="#" class="icon-link">View</a>
-                      <a href="#" class="icon-link">Code</a>
+                      <a href="#" class="icon-link">View Project</a>
                     </div>
                 </div>
               </div>
             </div><!-- End Portfolio Item -->
-            <div class="col-lg-4 col-md-6">
+            <div class="col-lg-4 col-md-6 project-card" data-tags="csharp">
               <div class="portfolio-item shadow-sm">
                 <img src="assets/images/exampleproject.png" class="img-fluid w-100" alt="Project 4">
                 <div class="portfolio-overlay">
                   <h4 class="m-0 text-peach fw-semibold">Project 4</h4>
                   <p class="mb-2 small">Lorem ipsum, dolor sit amet consectetur Lorem ipsum dolor sit 
-                    amet consectetur, adipisicing elit. Saepe consequuntur quo 
-                    reiciendis dolores, expedita consequatur.</p>
+                    amet consectetur, adipisicing elit.</p>
                     <div class="d-flex gap-3">
-                      <a href="#" class="icon-link">View</a>
-                      <a href="#" class="icon-link">Code</a>
+                      <a href="#" class="icon-link">View Project</a>
                     </div>
                 </div>
               </div>
             </div><!-- End Portfolio Item -->
-            <div class="col-lg-4 col-md-6">
+            <div class="col-lg-4 col-md-6 project-card" data-tags="python">
               <div class="portfolio-item shadow-sm">
                 <img src="assets/images/exampleproject.png" class="img-fluid w-100" alt="Project 5">
                 <div class="portfolio-overlay">
                   <h4 class="m-0 text-peach fw-semibold">Project 5</h4>
                   <p class="mb-2 small">Lorem ipsum, dolor sit amet consectetur Lorem ipsum dolor sit 
-                    amet consectetur, adipisicing elit. Saepe consequuntur quo 
-                    reiciendis dolores, expedita consequatur.</p>
+                    amet consectetur, adipisicing elit. </p>
                     <div class="d-flex gap-3">
-                      <a href="#" class="icon-link">View</a>
-                      <a href="#" class="icon-link">Code</a>
+                      <a href="#" class="icon-link">View Project</a>
                     </div>
                 </div>
               </div>
             </div><!-- End Portfolio Item -->
-            <div class="col-lg-4 col-md-6">
+            <div class="col-lg-4 col-md-6 project-card" data-tags="html css">
               <div class="portfolio-item shadow-sm">
                 <img src="assets/images/exampleproject.png" class="img-fluid w-100" alt="Project 6">
                 <div class="portfolio-overlay">
                   <h4 class="m-0 text-peach fw-semibold">Project 6</h4>
                   <p class="mb-2 small">Lorem ipsum, dolor sit amet consectetur Lorem ipsum dolor sit 
-                    amet consectetur, adipisicing elit. Saepe consequuntur quo 
-                    reiciendis dolores, expedita consequatur.</p>
+                    amet consectetur, adipisicing elit. </p>
                     <div class="d-flex gap-3">
-                      <a href="#" class="icon-link">View</a>
-                      <a href="#" class="icon-link">Code</a>
+                      <a href="#" class="icon-link">View Project</a>
                     </div>
                 </div>
               </div>
@@ -192,5 +196,29 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
     <script src="assets/js/customelements.js"></script>
     <script src="assets/js/main.js"></script>
+    <script>
+      const filterBar = document.getElementById("projectFilters");
+      const cards = document.querySelectorAll(".project-card");
+
+      filterBar.addEventListener("click", (e) => {
+        const link = e.target.closest("a[data-filter]");
+        if (!link) return;
+
+        e.preventDefault();
+
+        // active link styling
+        filterBar.querySelectorAll(".nav-link").forEach(a => a.classList.remove("active"));
+        link.classList.add("active");
+
+        const filter = link.dataset.filter;
+
+        cards.forEach(card => {
+          const tags = (card.dataset.tags || "").split(" "); // ["html","css"]
+          const show = (filter === "all") || tags.includes(filter);
+
+          card.style.display = show ? "" : "none";
+        });
+      });
+    </script>
 </body>
 </html>
