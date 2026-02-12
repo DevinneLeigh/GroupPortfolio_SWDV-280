@@ -28,10 +28,10 @@ document.addEventListener('DOMContentLoaded', () => {
       link: ""
     },
     {
-      imageSrc: "assets/images/profile.webp",
+      imageSrc: "assets/images/JonathanPopePhoto.jpg",
       heading: "Jonathan",
-      text: "Lorem ipsum dolor sit amet consectetur adipiscing elit. Dolor sit amet consectetur adipiscing elit quisque faucibus.",
-      link: ""
+      text: "Second Year Software Development student with a passion for backend development and data handling. Roughly 7 years of development and coding experience seeking a A.S. in Software Development to start my professional career.",
+      link: "https://www.jonathanpope.dev"
     },
     {
       imageSrc: "assets/images/profile.webp",
