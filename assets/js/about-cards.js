@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', () => {
       link: ""
     },
     {
-      imageSrc: "assets/images/lea-profile.jpg",
+      imageSrc: "assets/images/lea_profile.jpg",
       heading: "Lea",
       text: "Software development student, currently in the last semester of the program. Currently interning at In Time Tec as a UI/UX designer.",
       link: "https://myportfolio-c60573.gitlab.io/index.html"
