@@ -54,14 +54,14 @@
   color: v.$dark;
   font-size: 16px;
   font-weight: bold;
-  background: v.$light;
+  background: #fbfdf2;
   outline: none;
   border: none;
   transition: color 0.5s;
   cursor: pointer;
   border-radius:30px;
-  width: 250px;
-  height: 300px;
+  width: 260px;
+  height: 340px;
   box-shadow: 4px 4px 8px 1px #0000001e;
 
   &__content {

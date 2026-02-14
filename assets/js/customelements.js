@@ -3,14 +3,26 @@ class CustomNavbar extends HTMLElement {
         super();
 
         this.innerHTML = `
-        <nav class="navbar navbar-expand-sm navbar-dark bg-mocha">
+        <nav class="navbar navbar-expand-sm">
             <div class="container-fluid">
-                <a class="navbar-brand" href="index.html">Home</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+            <!-- Toggler -->
+                <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarOffcanvas" aria-controls="navbarOffcanvas">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+
+            <!-- Offcanvas -->
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="navbarOffcanvas">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title"></h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+                    </div>
+
+
+                <div class="offcanvas-body">
                     <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
                     <li class="nav-item">
                         <a class="nav-link" href="about.html">About</a>
                     </li>
@@ -32,7 +44,7 @@ class CustomFooter extends HTMLElement {
         super();
 
         this.innerHTML = `
-        <footer class="bg-dark text-white mt-5 p-4">
+        <footer class="mt-5 p-4">
             <div class="container text-center">
                 &copy; 2026 SWDV 280 Portfolio Site
             </div>

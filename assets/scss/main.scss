@@ -16,10 +16,54 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  background: v.$light;
 }
 
 main {
   flex: 1;
+}
+
+custom-navbar {
+    background: v.$mocha;
+    .nav-link {
+        color: v.$light;
+    }
+    .nav-link:hover {
+        color: v.$peach;
+    }
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler:focus-visible,
+.btn-close:focus,
+.btn-close:active,
+.btn-close:focus-visible {
+  box-shadow: none !important;
+  outline: none !important;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='%23f3f5e7' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+}
+
+.btn-close {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23f3f5e7'%3e%3cpath d='M.293.293a1 1 0 011.414 0L8 6.586 14.293.293a1 1 0 111.414 1.414L9.414 8l6.293 6.293a1 1 0 01-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 01-1.414-1.414L6.586 8 .293 1.707a1 1 0 010-1.414z'/%3e%3c/svg%3e") !important;
+}
+
+
+.offcanvas {
+    background: v.$mocha !important;
+    width: 250px !important;
+}
+
+custom-footer {
+    background: v.$mocha;
+    color: v.$light;
 }
 
 .submit-btn {
