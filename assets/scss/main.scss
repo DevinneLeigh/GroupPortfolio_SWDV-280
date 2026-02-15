@@ -33,6 +33,29 @@ custom-navbar {
     }
 }
 
+// Dynamically added to current page link
+.active-nav-link::after {
+    content: "";
+    display: block;
+    position: relative;
+    bottom: 0;
+
+    border-radius: 4px;
+
+    background-color: v.$light;
+    
+    --widthpercent: 70;
+    width: var(--widthpercent);
+    height: 4px;
+    margin: 1px calc(((100 - var(--widthpercent)) / 2) * 1%);
+
+    transition: all .2s ease;
+}
+.active-nav-link:hover::after { 
+    --widthpercent: 78;
+}
+
+
 .navbar-toggler {
     border: none;
 }
