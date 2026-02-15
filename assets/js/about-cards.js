@@ -46,10 +46,10 @@ document.addEventListener('DOMContentLoaded', () => {
       link: "https://myportfolio-c60573.gitlab.io/index.html"
     },
     {
-      imageSrc: "assets/images/profile.webp",
+      imageSrc: "assets/images/LukeMphoto.jpg",
       heading: "Luke",
-      text: "Lorem ipsum dolor sit amet consectetur adipiscing elit. Dolor sit amet consectetur adipiscing elit quisque faucibus.",
-      link: ""
+      text: "Associates in Software Development student with a passion for both front and back end work, enjoys working in groups to create something exciting and new. Loves to learn and is always looking to grow in the industry.",
+      link: "https://lukesometimescodes.github.io/"
     },
     {
       imageSrc: "assets/images/profile.webp",
