@@ -23,6 +23,10 @@ main {
   flex: 1;
 }
 
+p {
+  padding-top: 9px;
+}
+
 custom-navbar {
     background: v.$mocha;
     .nav-link {
@@ -87,6 +91,18 @@ custom-navbar {
 custom-footer {
     background: v.$mocha;
     color: v.$light;
+}
+
+
+header {
+    //padding-top: 90px;
+    color: v.$dark;
+}
+
+.finisher-header {
+    height: 300px !important; 
+    width: 100%;
+    position: relative;
 }
 
 .submit-btn {

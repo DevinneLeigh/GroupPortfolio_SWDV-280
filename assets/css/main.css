@@ -263,6 +263,67 @@
   pointer-events: auto;
 }
 
+#portfolio-section {
+  padding-top: 30px;
+}
+#portfolio-section .container {
+  padding-top: 30px;
+}
+
+.portfolio-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.portfolio-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 1rem;
+  background: rgba(38, 24, 26, 0.85);
+  color: #f3f5e7;
+  opacity: 0;
+  transition: opacity 0.25s ease;
+}
+
+.portfolio-item:hover .portfolio-overlay {
+  opacity: 1;
+}
+
+.portfolio-item img {
+  display: block;
+  transition: transform 0.25s ease;
+}
+
+.portfolio-item:hover img {
+  transform: scale(1.03);
+}
+
+.icon-link {
+  color: #FFE1A8;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.icon-link:hover {
+  color: #E26D5C;
+  text-decoration: underline;
+}
+
+#projectFilters .nav-link {
+  color: #723D46 !important;
+}
+
+#projectFilters .nav-link.active {
+  background: #E26D5C;
+  color: #f3f5e7 !important;
+  border-radius: 999px;
+  padding: 0.35rem 0.9rem;
+}
+
 html, body {
   height: 100%;
   margin: 0;
@@ -277,6 +338,10 @@ body {
 
 main {
   flex: 1;
+}
+
+p {
+  padding-top: 9px;
 }
 
 custom-navbar {
@@ -337,6 +402,16 @@ custom-navbar .nav-link:hover {
 custom-footer {
   background: #472D30;
   color: #f3f5e7;
+}
+
+header {
+  color: #26181A;
+}
+
+.finisher-header {
+  height: 300px !important;
+  width: 100%;
+  position: relative;
 }
 
 .submit-btn {

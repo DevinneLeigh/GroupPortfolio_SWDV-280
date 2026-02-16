@@ -1,2 +1,62 @@
 @use "../abstracts/variables" as v;
 @use "../abstracts/mixins" as m;
+
+#portfolio-section {
+    padding-top: 30px;
+    .container {
+        padding-top: 30px;
+    }
+}
+.portfolio-item{
+    position:relative;
+    overflow:hidden;
+    border-radius:12px;
+}
+
+.portfolio-overlay{
+    position:absolute;
+    inset:0;
+    display:flex;
+    flex-direction:column;
+    justify-content:flex-end;
+    padding:1rem;
+    background:rgba(38,24,26,0.85);
+    color:v.$light;
+    opacity:0;
+    transition:opacity .25s ease;
+}
+
+.portfolio-item:hover .portfolio-overlay{
+    opacity:1;
+}
+
+.portfolio-item img{
+    display:block;
+    transition:transform .25s ease;
+}
+
+.portfolio-item:hover img{
+    transform:scale(1.03);
+}
+
+.icon-link{
+    color:v.$peach;
+    text-decoration:none;
+    font-weight:600;
+}
+
+.icon-link:hover{
+    color:v.$coral;
+    text-decoration:underline;
+}
+
+#projectFilters .nav-link{
+    color: v.$plum !important;
+}
+
+#projectFilters .nav-link.active{
+    background: v.$coral;
+    color: v.$light !important;
+    border-radius: 999px;
+    padding: .35rem .9rem;
+}
