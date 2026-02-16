@@ -52,7 +52,7 @@ document.addEventListener('DOMContentLoaded', () => {
       link: "https://lukesometimescodes.github.io/"
     },
     {
-      imageSrc: "assets/images/profile.webp",
+      imageSrc: "assets/images/matthias-profile.jpg",
       heading: "Matthias",
       text: "Lorem ipsum dolor sit amet consectetur adipiscing elit. Dolor sit amet consectetur adipiscing elit quisque faucibus.",
       link: ""
