@@ -5,6 +5,10 @@ document.addEventListener("DOMContentLoaded", () => {
 // Adds class to <a> tag pointing to current page
 function highlightActiveNavLink() {
     let thisWebsite = `${window.location}`.split("#")[0];
+
+    if (thisWebsite.endsWith("/")) {
+        thisWebsite += "index.html"
+    }
     let regex = RegExp(thisWebsite);
 
     let navArea = document.getElementsByTagName("nav")[0];
