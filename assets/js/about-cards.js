@@ -58,10 +58,10 @@ document.addEventListener('DOMContentLoaded', () => {
       link: ""
     },
     {
-      imageSrc: "assets/images/profile.webp",
+      imageSrc: "assets/images/NicoleAbout.JPG",
       heading: "Nicole",
-      text: "Lorem ipsum dolor sit amet consectetur adipiscing elit. Dolor sit amet consectetur adipiscing elit quisque faucibus.",
-      link: ""
+      text: "I am a Software Development student at the College of Western Idaho with two years of development experience. I plan to build websites professionally while also learning video game development as a passion project.",
+      link: "https://nicoledaniel.github.io/PersonalPortfolio02-18-2026/"
     },
     {
       imageSrc: "assets/images/RRS-profile-img.JPG",
