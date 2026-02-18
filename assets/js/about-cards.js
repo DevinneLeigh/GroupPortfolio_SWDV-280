@@ -34,9 +34,9 @@ document.addEventListener('DOMContentLoaded', () => {
       link: "https://www.jonathanpope.dev"
     },
     {
-      imageSrc: "assets/images/profile.webp",
+      imageSrc: "assets/images/JonnyWagstaffPhoto.jpg",
       heading: "Jonny",
-      text: "Lorem ipsum dolor sit amet consectetur adipiscing elit. Dolor sit amet consectetur adipiscing elit quisque faucibus.",
+      text: "Hi, I'm Jonathan(Jonny) Wagstaff! I'm a software development student at CWI in my final semester of my associate degree. I like to code, read books, and interact with people! My favorite programming languages are likely Python and HTML, though I like others as well!",
       link: ""
     },
     {
