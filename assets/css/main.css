@@ -338,6 +338,8 @@ body {
 
 main {
   flex: 1;
+  position: relative;
+  top: -150px;
 }
 
 p {
@@ -406,6 +408,7 @@ custom-footer {
 
 header {
   color: #26181A;
+  mask-image: linear-gradient(#000 40%, rgba(0, 0, 0, 0));
 }
 
 .finisher-header {
