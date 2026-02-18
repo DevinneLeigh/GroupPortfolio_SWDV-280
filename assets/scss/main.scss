@@ -61,6 +61,18 @@ custom-navbar {
 .active-nav-link:hover::after { 
     --widthpercent: 78;
 }
+@media (max-width: m.$sm) {
+    .active-nav-link::after {
+        width: 40px;
+        margin-left: 8px;
+    }
+
+    .active-nav-link:hover::after { 
+        width: 52px;
+        margin-left: 2px;
+    }
+    
+}
 
 
 .navbar-toggler {

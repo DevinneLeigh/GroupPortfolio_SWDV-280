@@ -374,6 +374,16 @@ custom-navbar .nav-link:hover {
   --widthpercent: 78;
 }
 
+@media (max-width: 576px) {
+  .active-nav-link::after {
+    width: 40px;
+    margin-left: 8px;
+  }
+  .active-nav-link:hover::after {
+    width: 52px;
+    margin-left: 2px;
+  }
+}
 .navbar-toggler {
   border: none;
 }
