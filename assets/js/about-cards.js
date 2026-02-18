@@ -22,10 +22,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const cardsData = [
     {
-      imageSrc: "assets/images/profile.webp",
+      imageSrc: "assets/images/ethan.png",
       heading: "Ethan",
-      text: "Lorem ipsum dolor sit amet consectetur adipiscing elit. Dolor sit amet consectetur adipiscing elit quisque faucibus.",
-      link: ""
+      text: "I have been tinkering with several programming languages for years, and I committed to a programming career in 2024. I specialize in backend coding with Python and C#, and I will have my Associate of Science degree at the end of this semester.",
+      link: "https://ethanhavlik.github.io/SWDVPortfolio"
     },
     {
       imageSrc: "assets/images/JonathanPopePhoto.jpg",
