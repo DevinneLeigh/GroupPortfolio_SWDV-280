@@ -1,2 +1,31 @@
 @use "../abstracts/variables" as v;
 @use "../abstracts/mixins" as m;
+
+/*HOME HERO*/
+.home-hero {
+  background: v.$plum;
+  color: v.$light;
+  padding: 40px 20px;
+  border-radius: 30px;
+  margin: 0 auto 40px auto;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+  text-align: center;
+  max-width: 600px;
+  @include m.md { // 768px
+    padding: 60px 30px;
+  }
+
+  &__title {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 12px;
+  }
+
+  &__subtitle {
+    max-width: 700px;
+    margin: 0 auto 20px auto;
+    font-size: 16px;
+    line-height: 1.6;
+    opacity: 0.95;
+  }
+}
