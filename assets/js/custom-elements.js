@@ -52,5 +52,43 @@ class CustomFooter extends HTMLElement {
     }
 }
 
+
+class ProjectCard extends HTMLElement {
+    constructor() {
+        super();
+
+        // Collect attributes
+        const title = this.getAttribute("project-title"); 
+        const description = this.getAttribute("project-description");
+        
+        let image = this.getAttribute("project-image");
+        let link = this.getAttribute("project-link");
+
+        const category = this.getAttribute("categories");
+
+        // If attributes are not set, they get defaulted
+        if (!link)  {link = "#";}
+        if (!image) {image = "assets/images/exampleproject.png";}
+        
+        // The custom element gets replaced with this html
+        this.outerHTML =  `
+        <div class="col-lg-4 col-md-6 project-card" data-tags="${category}">
+            <div class="portfolio-item shadow-sm">
+                <img src="${image}" class="img-fluid w-100" alt="${title}">
+                <div class="portfolio-overlay">
+                    <h4 class="m-0 text-peach fw-semibold">${title}</h4>
+                    <p class="mb-2 small">${description}</p>
+                        <div class="d-flex gap-3">
+                            <a href="${link}" class="icon-link">View Project</a>
+                        </div>
+                    </div>
+                </div>
+        </div>`
+        
+    }
+}
+customElements.define("project-card", ProjectCard);
+
 customElements.define("custom-footer", CustomFooter);
 customElements.define("custom-navbar", CustomNavbar);
+

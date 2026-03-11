@@ -22,79 +22,56 @@
           <li class="nav-item"><a class="nav-link" href="#" data-filter="python">Python</a></li>
           <li class="nav-item"><a class="nav-link" href="#" data-filter="csharp">C#</a></li>
         </ul>
+
         <div class="row g-4">
-          <div class="col-lg-4 col-md-6 project-card" data-tags="html css">
-            <div class="portfolio-item shadow-sm">
-              <img src="assets/images/exampleproject.png" class="img-fluid w-100" alt="Project 1">
-              <div class="portfolio-overlay">
-                <h4 class="m-0 text-peach fw-semibold">Project 1</h4>
-                <p class="mb-2 small">Lorem ipsum, dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-                <div class="d-flex gap-3">
-                  <a href="#" class="icon-link">View Project</a>
-                </div>
-              </div>
-            </div>
-          </div><!-- End Portfolio Item -->
-          <div class="col-lg-4 col-md-6 project-card" data-tags="html css javascript">
-            <div class="portfolio-item shadow-sm">
-              <img src="assets/images/exampleproject.png" class="img-fluid w-100" alt="Project 2">
-              <div class="portfolio-overlay">
-                <h4 class="m-0 text-peach fw-semibold">Project 2</h4>
-                <p class="mb-2 small">Lorem ipsum, dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-                  <div class="d-flex gap-3">
-                    <a href="#" class="icon-link">View Project</a>
-                  </div>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-            <div class="col-lg-4 col-md-6 project-card" data-tags="python">
-              <div class="portfolio-item shadow-sm">
-                <img src="assets/images/exampleproject.png" class="img-fluid w-100" alt="Project 3">
-                <div class="portfolio-overlay">
-                  <h4 class="m-0 text-peach fw-semibold">Project 3</h4>
-                  <p class="mb-2 small">Lorem ipsum, dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-                  <div class="d-flex gap-3">
-                    <a href="#" class="icon-link">View Project</a>
-                  </div>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-            <div class="col-lg-4 col-md-6 project-card" data-tags="csharp">
-              <div class="portfolio-item shadow-sm">
-                <img src="assets/images/exampleproject.png" class="img-fluid w-100" alt="Project 4">
-                <div class="portfolio-overlay">
-                  <h4 class="m-0 text-peach fw-semibold">Project 4</h4>
-                  <p class="mb-2 small">Lorem ipsum, dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-                  <div class="d-flex gap-3">
-                    <a href="#" class="icon-link">View Project</a>
-                  </div>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-            <div class="col-lg-4 col-md-6 project-card" data-tags="python">
-              <div class="portfolio-item shadow-sm">
-                <img src="assets/images/exampleproject.png" class="img-fluid w-100" alt="Project 5">
-                <div class="portfolio-overlay">
-                  <h4 class="m-0 text-peach fw-semibold">Project 5</h4>
-                  <p class="mb-2 small">Lorem ipsum, dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-                  <div class="d-flex gap-3">
-                    <a href="#" class="icon-link">View Project</a>
-                  </div>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-            <div class="col-lg-4 col-md-6 project-card" data-tags="html css">
-              <div class="portfolio-item shadow-sm">
-                <img src="assets/images/exampleproject.png" class="img-fluid w-100" alt="Project 6">
-                <div class="portfolio-overlay">
-                  <h4 class="m-0 text-peach fw-semibold">Project 6</h4>
-                  <p class="mb-2 small">Lorem ipsum, dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-                  <div class="d-flex gap-3">
-                    <a href="#" class="icon-link">View Project</a>
-                  </div>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
+          <!--
+          project-card guide:
+            project-title: name of project
+            project-description: is the description
+            
+            project-link: project site link. defaults to "#"
+            project-image: path to image. defaults to exampleproject.jpg 
+            
+            categories: where the project gets filtered into  
+          -->
+          <project-card 
+            project-title="Project 1" 
+            project-description="Lorem ipsum, dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur, adipisicing elit." 
+            categories="html css"
+            project-link="#" 
+            project-image="assets/images/exampleproject.png"
+            ></project-card>
+          
+            <project-card 
+            project-title="Project 2" 
+            project-description="Lorem ipsum, dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur, adipisicing elit." 
+            categories="html css javascript"
+            ></project-card>
+          
+            <project-card 
+            project-title="Project 3" 
+            project-description="Lorem ipsum, dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur, adipisicing elit." 
+            categories="python"
+            >
+          </project-card>
+          
+          <project-card 
+            project-title="Project 4" 
+            project-description="Lorem ipsum, dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur, adipisicing elit." 
+            categories="csharp"
+            ></project-card>
+          
+            <project-card 
+            project-title="Project 5" 
+            project-description="Lorem ipsum, dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur, adipisicing elit." 
+            categories="python"
+            ></project-card>
+          
+            <project-card 
+            project-title="Project 6" 
+            project-description="Lorem ipsum, dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur, adipisicing elit." 
+            categories="html css"
+            ></project-card>          
           </div><!-- End Portfolio Container -->
         </div>
     </section><!-- /Portfolio Section -->
