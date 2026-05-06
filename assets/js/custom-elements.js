@@ -44,7 +44,7 @@ class CustomFooter extends HTMLElement {
         super();
 
         this.innerHTML = `
-        <footer class="mt-5 p-4">
+        <footer class="p-4">
             <div class="container text-center">
                 &copy; 2026 SWDV 280 Portfolio Site
             </div>

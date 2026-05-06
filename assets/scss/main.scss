@@ -17,6 +17,7 @@ body {
   flex-direction: column;
   min-height: 100vh;
   background: v.$light;
+  overflow-x: hidden;
 }
 
 main {
@@ -106,6 +107,8 @@ custom-navbar {
 custom-footer {
     background: v.$mocha;
     color: v.$light;
+    position: relative;
+    top: -150px;
 }
 
 
@@ -153,9 +156,3 @@ header {
     color: v.$coral;
     border: solid 2px v.$coral;
 }
-
-
-
-
-
-
