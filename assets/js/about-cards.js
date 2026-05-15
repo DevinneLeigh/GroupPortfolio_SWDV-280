@@ -65,8 +65,8 @@ document.addEventListener("DOMContentLoaded", () => {
         {
             imageSrc: "assets/images/RRS-profile-img.JPG",
             heading: "Riley",
-            text: "Software developer with four years of coding experience and a strong focus on problem-solving. CWI graduate currently continuing toward a B.S. in Computer Science at Boise State University.",
-            link: "https://stackblitz.com/edit/stackblitz-starters-jpn5yqs7?embed=1&file=src%2Findex.js&view=preview",
+            text: "Software developer with four years of coding experience and a strong focus on problem-solving. Currently have my Associates degree continuing toward a B.S. in Computer Science at Southern New Hampshire University.",
+            link: "https://rstra9564.github.io/MyPortfolio-Main/",
         },
         {
             imageSrc: "assets/images/sarah-profile-img.png",
