@@ -84,7 +84,7 @@ document.addEventListener("DOMContentLoaded", () => {
             imageSrc: "assets/images/devinne-profile.jpg",
             heading: "Devinne",
             text: "I'm a Software Development student, set to graduate with my associate's degree in the Spring of 2026. I will be working as a full-stack web developer at Arcane Web Design, located in Boise Idaho. ",
-            link: "https://devinneleigh.github.io/portfolio3/index.html",
+            link: "https://devinneleigh.github.io/DM-Portfolio/dist/",
         },
     ];
 
