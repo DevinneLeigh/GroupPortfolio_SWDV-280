@@ -75,10 +75,10 @@ document.addEventListener("DOMContentLoaded", () => {
             link: "https://swwebdev.github.io/Personal_Portfolio_Winter_2025/index.html",
         },
         {
-            imageSrc: "assets/images/profile.webp",
+            imageSrc: "assets/images/sham.jpg",
             heading: "Sham",
-            text: "Lorem ipsum dolor sit amet consectetur adipiscing elit. Dolor sit amet consectetur adipiscing elit quisque faucibus.",
-            link: "",
+            text: "Second-year Software Development student at CWI with a passion for web designing, seeking to continue my studies at BSU.",
+            link: "https://shamhussari.github.io/sham-portfolio/index.html",
         },
         {
             imageSrc: "assets/images/devinne-profile.jpg",
