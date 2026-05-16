@@ -422,8 +422,6 @@ custom-navbar .nav-link:hover {
 custom-footer {
   background: #472D30;
   color: #f3f5e7;
-  position: relative;
-  top: -150px;
 }
 
 header {
