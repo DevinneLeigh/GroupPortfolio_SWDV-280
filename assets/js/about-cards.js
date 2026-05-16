@@ -83,7 +83,7 @@ document.addEventListener("DOMContentLoaded", () => {
         {
             imageSrc: "assets/images/devinne-profile.jpg",
             heading: "Devinne",
-            text: "I'm a Software Development student, set to graduate with my associate's degree in the Spring of 2026. I will be working as a full-stack web developer at Arcane Web Design, located in Boise Idaho. ",
+            text: "I graduated in 2026 from the College of Western Idaho with an associate’s degree in Software Development. I am currently a full-stack web developer and partner at Arcane Web Design in Boise, Idaho, where I continue to expand my skills and experience through client projects.",
             link: "https://devinneleigh.github.io/DM-Portfolio/dist/",
         },
     ];
